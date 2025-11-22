@@ -15,6 +15,7 @@ namespace ElectronicsERP
 
             // ✅ Database connection
             // Mohsin Update
+            // awais toop updated
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
