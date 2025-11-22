@@ -14,6 +14,7 @@ namespace ElectronicsERP
             var builder = WebApplication.CreateBuilder(args);
 
             // ✅ Database connection
+            // Mohsin Update
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
