@@ -53,16 +53,25 @@ namespace ElectronicsERP
 
 
             // Add CORS policy BEFORE builder.Build()
+            //builder.Services.AddCors(options =>
+            //{
+            //    options.AddPolicy("AllowReactApp",
+            //        policy =>
+            //        {
+            //            policy.WithOrigins("http://localhost:5173", "http://localhost:8083") // ✅ Allow both dev and nginx
+            //                  .AllowAnyHeader()
+            //                  .AllowAnyMethod()
+            //                  .AllowCredentials();
+            //        });
+            //});
             builder.Services.AddCors(options =>
             {
-                options.AddPolicy("AllowReactApp",
-                    policy =>
-                    {
-                        policy.WithOrigins("http://localhost:5173", "http://localhost:8083") // ✅ Allow both dev and nginx
-                              .AllowAnyHeader()
-                              .AllowAnyMethod()
-                              .AllowCredentials();
-                    });
+                options.AddPolicy("AllowAll", policy =>
+                {
+                    policy.AllowAnyOrigin()
+                          .AllowAnyMethod()
+                          .AllowAnyHeader();
+                });
             });
 
 
