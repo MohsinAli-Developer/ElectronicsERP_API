@@ -152,7 +152,8 @@ namespace ElectronicsERP.Controllers
                 cmd.Parameters.AddWithValue("@id", id);
                 con.Open();
                 int rows = cmd.ExecuteNonQuery();
-                if (rows == 0) return NotFound();
+                if (rows == 0)
+                    return NotFound();
             }
 
             return Ok(new { message = "Product deleted successfully" });
