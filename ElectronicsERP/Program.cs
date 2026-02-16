@@ -193,8 +193,10 @@ namespace ElectronicsERP
 
             // Use correct policy
             app.UseCors("AllowReactApp");
+            //app.UseHsts();
 
             //app.UseHttpsRedirection();
+            app.UseMiddleware<BasicAuthMiddleware>();
 
             app.UseAuthentication();
             app.UseAuthorization();

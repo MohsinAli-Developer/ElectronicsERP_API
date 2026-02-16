@@ -17,7 +17,7 @@
       //"applicationUrl": "http://localhost:5018",
       //"applicationUrl": "http://192.168.18.67:5010",
       //"applicationUrl": "http://192.168.18.23:5010",
-      "applicationUrl": "http://172.19.57.211:5010",
+      "applicationUrl": "http://10.74.237.195:5010",
       //"applicationUrl": "http://192.168.1.8:5010",
 
       "environmentVariables": {
@@ -29,8 +29,9 @@
       "dotnetRunMessages": true,
       "launchBrowser": true,
       "launchUrl": "swagger",
-      "applicationUrl": "https://localhost:7183;http://localhost:5018",
+      //"applicationUrl": "https://localhost:7183;http://localhost:5018",
       //"applicationUrl": "http://192.168.1.7:5010",
+      "applicationUrl": "https://10.74.237.195:5010",
 
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
